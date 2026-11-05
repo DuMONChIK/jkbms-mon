@@ -1,0 +1,15 @@
+[Unit]
+Description=JK_BMS Monitoring
+Wants=network.target network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=exec
+User=root
+WorkingDirectory=/opt/solar-mon
+ExecStart=/opt/solar-mon/jkbms-mon.py
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
