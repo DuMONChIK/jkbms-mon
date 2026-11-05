@@ -1,0 +1,11 @@
+#USB Port-1
+SUBSYSTEM=="tty", KERNELS=="1-1.1", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="usb-rs485-port1"
+
+#USB Port-2
+SUBSYSTEM=="tty", KERNELS=="1-1.2", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="usb-rs485-port2"
+
+#USB Port-3
+SUBSYSTEM=="tty", KERNELS=="1-1.3", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="usb-rs485-port3"
+
+#USB Port-4
+SUBSYSTEM=="tty", KERNELS=="1-1.4", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="usb-rs485-port4"
